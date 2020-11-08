@@ -71,6 +71,107 @@ $('#start').on('click', function () {
 100歳超
 
 
+超富裕層（1億ドル超）
+富裕層（10万ドル超1億ドル以下）
+中間層（1万ドル超10万ドル以下）
+貧困層（1万ドル未満）
+
+"0%
+5%
+10%
+15%
+20%
+25%
+30%
+Cardiovascular diseases
+31.8%
+Cancers
+17.08%
+Respiratory diseases
+7%
+Lower respiratory infections
+4.57%
+Dementia
+4.49%
+Digestive diseases
+4.25%
+Neonatal deaths
+3.19%
+Diarrheal diseases
+2.81%
+Diabetes mellitus
+2.45%
+Liver disease
+2.36%
+Road incidents
+2.22%
+Kidney disease
+2.2%
+Tuberculosis
+2.12%
+HIV/AIDS
+1.71%
+Suicide
+1.42%
+Malaria
+1.11%
+Homicide
+0.72%
+Parkinson disease
+0.61%
+Drowning
+0.53%
+Meningitis
+0.51%
+Nutritional deficiencies
+0.48%
+Protein-energy malnutrition
+0.41%
+Maternal deaths
+0.35%
+Alcohol disorders
+0.33%
+Drug disorders
+0.3%
+Hepatitis
+0.23%
+Fire
+0.22%
+Conflict
+0.21% (2016)
+Heat-related (hot and cold exposure)
+0.1%
+Terrorism
+0.05%
+Natural disaster"
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

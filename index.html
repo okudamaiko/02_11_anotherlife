@@ -32,7 +32,7 @@
 
                 <div class="money">
                     <p>どのくらいお金を稼げる？</p>
-                    <li id="pull_m"><img src="./money.png" alt="" height=200px></li>
+                    <li id="pull_m"><img src="./rich.png" alt="" height=200px></li>
                     <p id="result_m">result_m</p>
                 </div>
 
@@ -54,6 +54,12 @@
                     <p id="result_d">result_d</p>
                 </div>
 
+                <div class="cause">
+                    <p>死因は？</p>
+                    <li id="pull_2"><img src="./death_2.png" alt="" height=200px></li>
+                    <p id="result_2">result_d</p>
+                </div>
+
             </div>
         </ul>
 
@@ -65,15 +71,15 @@
 
         //ここに自分の処理を追加
         $('#start').on('click', function () {
-            const r = Math.ceil(Math.random() * 1000);
-            if (r >= 1 && r <= 312) {
-                $('#result_m').text('所得300万以下');
-            } else if (r >= 313 && r <= 645) {
-                $('#result_m').text('所得300万円～600万円');
-            } else if (r >= 646 && r <= 838) {
-                $('#result_m').text('所得600万円～1000万円');
-            } else if (r >= 839 && r <= 1000) {
-                $('#result_m').text('所得1000万円超');
+            const r = Math.ceil(Math.random() * 3211);
+            if (r >= 1 && r <= 42) {
+                $('#result_m').text('超富裕層（1億ドル超）');
+            } else if (r >= 43 && r <= 436) {
+                $('#result_m').text('富裕層（10万ドル超1億ドル以下）');
+            } else if (r >= 437 && r <= 1335) {
+                $('#result_m').text('中間層（1万ドル超10万ドル以下）');
+            } else if (r >= 1336 && r <= 3211) {
+                $('#result_m').text('貧困層（1万ドル未満）');
             }
         });
 
@@ -173,8 +179,76 @@
             } else if (r >= 1151149 && r <= 1255812) {
                 $('#result_d').text('100歳超');
             }
-
         });
+
+        $('#start').on('click', function () {
+            const r = Math.ceil(Math.random() * 9585);
+            if (r >= 1 && r <= 3180) {
+                $('#result_2').text('心血管疾患');
+            } else if (r >= 3181 && r <= 4888) {
+                $('#result_2').text('癌');
+            } else if (r >= 4889 && r <= 5588) {
+                $('#result_2').text('呼吸器疾患');
+            } else if (r >= 5589 && r <= 6045) {
+                $('#result_2').text('下気道感染症');
+            } else if (r >= 6046 && r <= 6494) {
+                $('#result_2').text('認知症');
+            } else if (r >= 6495 && r <= 6919) {
+                $('#result_2').text('消化器疾患');
+            } else if (r >= 6920 && r <= 7238) {
+                $('#result_2').text('新生児死亡');
+            } else if (r >= 7239 && r <= 7519) {
+                $('#result_2').text('下痢性疾患');
+            } else if (r >= 7520 && r <= 7764) {
+                $('#result_2').text('糖尿病');
+            } else if (r >= 7765 && r <= 8000) {
+                $('#result_2').text('肝疾患');
+            } else if (r >= 8001 && r <= 8222) {
+                $('#result_2').text('交通事故');
+            } else if (r >= 8223 && r <= 8442) {
+                $('#result_2').text('腎臓病');
+            } else if (r >= 8443 && r <= 8654) {
+                $('#result_2').text('結核');
+            } else if (r >= 8655 && r <= 8825) {
+                $('#result_2').text('HIV / AIDS');
+            } else if (r >= 8826 && r <= 8967) {
+                $('#result_2').text('自殺');
+            } else if (r >= 8968 && r <= 9078) {
+                $('#result_2').text('マラリア');
+            } else if (r >= 9079 && r <= 9150) {
+                $('#result_2').text('殺人');
+            } else if (r >= 9151 && r <= 9211) {
+                $('#result_2').text('パーキンソン病');
+            } else if (r >= 9212 && r <= 9264) {
+                $('#result_2').text('溺死');
+            } else if (r >= 9265 && r <= 9315) {
+                $('#result_2').text('髄膜炎');
+            } else if (r >= 9316 && r <= 9363) {
+                $('#result_2').text('栄養不足');
+            } else if (r >= 9364 && r <= 9404) {
+                $('#result_2').text('タンパク質エネルギー栄養不良');
+            } else if (r >= 9405 && r <= 9439) {
+                $('#result_2').text('妊産婦死亡');
+            } else if (r >= 9440 && r <= 9472) {
+                $('#result_2').text('アルコール障害');
+            } else if (r >= 9473 && r <= 9502) {
+                $('#result_2').text('薬物障害');
+            } else if (r >= 9503 && r <= 9525) {
+                $('#result_2').text('肝炎');
+            } else if (r >= 9526 && r <= 9547) {
+                $('#result_2').text('火災');
+            } else if (r >= 9548 && r <= 9568) {
+                $('#result_2').text('紛争');
+            } else if (r >= 9569 && r <= 9578) {
+                $('#result_2').text('熱関連');
+            } else if (r >= 9579 && r <= 9583) {
+                $('#result_2').text('テロ');
+            } else if (r >= 9584 && r <= 9585) {
+                $('#result_2').text('自然災害');
+            }
+        });
+
+
 
     </script>
 
