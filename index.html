@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="expr.css">
+    <title>思考実験★ANOTHER LIFE</title>
+</head>
+
+<body>
+    <header>
+        <h1 class="title_letter">ANOTHER LIFE</h1>
+        <p>どんな境遇に生まれてくるかわからないとしたら…</p>
+    </header>
+
+    <main>
+        <div class="title_1">
+            <p>「公正とは？」「正義をいかに実現するか？」を追求したジョン・ロールズというアメリカの哲学者がいました。</p>
+            <p>才能に恵まれたアスリートや俳優、生まれながらの億万長者を見て不公平だと感じたことはありませんか。<br>
+                また、障害や疾病、貧困などの境遇に苦しむ人を見て「自分はまだ恵まれているんだなあ」と感じたことはありませんか。</p>
+            <p>ジョン・ロールズは、公正な社会を実現するため「無知のヴェール」という思考実験を提案しました。</p>
+            <p>誰もが不運や格差の被害者になる可能性が平等にあるのなら、そのような立場でも公正だといえる社会秩序を選ぶはずだと考えたからです。</p>
+            <p>ANOTHER LIFEは思考実験を体験するゲームです。</p>
+        </div>
+        <p class="start_t">Let's Start!!!</p>
+        <div class="start_b">
+            <p id=start><img src="./start.png" alt="" height=200px></p>
+        </div>
+        <ul>
+            <div class="espr">
+
+                <div class="money">
+                    <p>どのくらいお金を稼げる？</p>
+                    <li id="pull_m"><img src="./money.png" alt="" height=200px></li>
+                    <p id="result_m">result_m</p>
+                </div>
+
+                <div class="chinou">
+                    <p>IQは??</p>
+                    <li id="pull_c"><img src="./chinou.png" alt="" height=200px></li>
+                    <p id="result_c">result_c</p>
+                </div>
+
+                <div class="country">
+                    <p>どの国に生まれる？</p>
+                    <li id="pull_r"><img src="./world.png" alt="" height=200px></li>
+                    <p id="result_r">result_r</p>
+                </div>
+
+                <div class="lifespan">
+                    <p>何歳まで生きる？</p>
+                    <li id="pull_d"><img src="./death.png" alt="" height=200px></li>
+                    <p id="result_d">result_d</p>
+                </div>
+
+            </div>
+        </ul>
+
+    </main>
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script>
+
+        //ここに自分の処理を追加
+        $('#start').on('click', function () {
+            const r = Math.ceil(Math.random() * 1000);
+            if (r >= 1 && r <= 312) {
+                $('#result_m').text('所得300万以下');
+            } else if (r >= 313 && r <= 645) {
+                $('#result_m').text('所得300万円～600万円');
+            } else if (r >= 646 && r <= 838) {
+                $('#result_m').text('所得600万円～1000万円');
+            } else if (r >= 839 && r <= 1000) {
+                $('#result_m').text('所得1000万円超');
+            }
+        });
+
+
+        $('#start').on('click', function () {
+            const r = Math.ceil(Math.random() * 1000);
+            if (r >= 1 && r <= 23) {
+                $('#result_c').text('IQ０～７０');
+            } else if (r >= 24 && r <= 159) {
+                $('#result_c').text('IQ７０～８５');
+            } else if (r >= 160 && r <= 500) {
+                $('#result_c').text('IQ８５～１００');
+            } else if (r >= 501 && r <= 841) {
+                $('#result_c').text('IQ１００～１１５');
+            } else if (r >= 842 && r <= 977) {
+                $('#result_c').text('IQ１１５～１３０');
+            } else if (r >= 978 && r <= 1000) {
+                $('#result_c').text('IQ１３０超');
+            }
+
+        });
+
+        $('#start').on('click', function () {
+            const r = Math.ceil(Math.random() * 5667);
+            if (r >= 1 && r <= 1435) {
+                $('#result_r').text('中国');
+            } else if (r >= 1436 && r <= 2787) {
+                $('#result_r').text('インド');
+            } else if (r >= 2788 && r <= 3114) {
+                $('#result_r').text('アメリカ');
+            } else if (r >= 3115 && r <= 3381) {
+                $('#result_r').text('インドネシア');
+            } else if (r >= 3382 && r <= 3593) {
+                $('#result_r').text('パキスタン');
+            } else if (r >= 3594 && r <= 3802) {
+                $('#result_r').text('ブラジル');
+            } else if (r >= 3803 && r <= 3997) {
+                $('#result_r').text('ナイジェリア');
+            } else if (r >= 3998 && r <= 4158) {
+                $('#result_r').text('バングラデシュ');
+            } else if (r >= 4159 && r <= 4303) {
+                $('#result_r').text('ロシア');
+            } else if (r >= 4304 && r <= 4430) {
+                $('#result_r').text('日本');
+            } else if (r >= 4431 && r <= 4556) {
+                $('#result_r').text('メキシコ');
+            } else if (r >= 4557 && r <= 4665) {
+                $('#result_r').text('エチオピア');
+            } else if (r >= 4772 && r <= 4869) {
+                $('#result_r').text('フィリピン');
+            } else if (r >= 4870 && r <= 4964) {
+                $('#result_r').text('エジプト');
+            } else if (r >= 4965 && r <= 5048) {
+                $('#result_r').text('ベトナム');
+            } else if (r >= 5049 && r <= 5131) {
+                $('#result_r').text('コンゴ民主共和国');
+            } else if (r >= 5132 && r <= 5213) {
+                $('#result_r').text('ドイツ');
+            } else if (r >= 5214 && r <= 5294) {
+                $('#result_r').text('トルコ');
+            } else if (r >= 5295 && r <= 5363) {
+                $('#result_r').text('イラン');
+            } else if (r >= 5364 && r <= 5430) {
+                $('#result_r').text('タイ');
+            } else if (r >= 5431 && r <= 5494) {
+                $('#result_r').text('イギリス');
+            } else if (r >= 5431 && r <= 5494) {
+                $('#result_r').text('フランス');
+            } else if (r >= 5495 && r <= 5554) {
+                $('#result_r').text('イタリア');
+            } else if (r >= 5555 && r <= 5611) {
+                $('#result_r').text('南アフリカ');
+            } else if (r >= 5612 && r <= 5667) {
+                $('#result_r').text('タンザニア');
+            }
+        });
+        $('#start').on('click', function () {
+            const r = Math.ceil(Math.random() * 1255812);
+            if (r >= 1 && r <= 5551) {
+                $('#result_d').text('19歳まで');
+            } else if (r >= 5552 && r <= 11230) {
+                $('#result_d').text('20歳～29歳');
+            } else if (r >= 11231 && r <= 22100) {
+                $('#result_d').text('30歳～39歳');
+            } else if (r >= 22101 && r <= 46286) {
+                $('#result_d').text('40歳～49歳');
+            } else if (r >= 46287 && r <= 100272) {
+                $('#result_d').text('50歳～59歳');
+            } else if (r >= 100273 && r <= 247924) {
+                $('#result_d').text('60歳～69歳');
+            } else if (r >= 247925 && r <= 523775) {
+                $('#result_d').text('70歳～79歳');
+            } else if (r >= 523776 && r <= 980248) {
+                $('#result_d').text('80歳～89歳');
+            } else if (r >= 980249 && r <= 1151148) {
+                $('#result_d').text('90歳～99歳');
+            } else if (r >= 1151149 && r <= 1255812) {
+                $('#result_d').text('100歳超');
+            }
+
+        });
+
+    </script>
+
+</body>
+
+</html>
