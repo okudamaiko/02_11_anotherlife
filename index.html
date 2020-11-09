@@ -6,12 +6,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="expr.css">
     <title>思考実験★ANOTHER LIFE</title>
+
 </head>
 
 <body>
     <header>
         <h1 class="title_letter">ANOTHER LIFE</h1>
-        <p>どんな境遇に生まれてくるかわからないとしたら…</p>
+        <p class="title_0">どんな境遇に生まれてくるかわからないとしたら…</p>
     </header>
 
     <main>
@@ -22,8 +23,10 @@
             <p>ジョン・ロールズは、公正な社会を実現するため「無知のヴェール」という思考実験を提案しました。</p>
             <p>誰もが不運や格差の被害者になる可能性が平等にあるのなら、そのような立場でも公正だといえる社会秩序を選ぶはずだと考えたからです。</p>
             <p>ANOTHER LIFEは思考実験を体験するゲームです。</p>
+            <p>※確率は実際の統計数値に基づいて計算されています。</p>
         </div>
         <p class="start_t">Let's Start!!!</p>
+        <p class="one">ボタンを押すのは1回だけ！</p>
         <div class="start_b">
             <p id=start><img src="./start.png" alt="" height=200px></p>
         </div>
@@ -32,32 +35,32 @@
 
                 <div class="money">
                     <p>どのくらいお金を稼げる？</p>
-                    <li id="pull_m"><img src="./rich.png" alt="" height=200px></li>
-                    <p id="result_m">result_m</p>
+                    <li id="pull_m"><img src="./rich.png" alt="" height=100px></li>
+                    <p id="result_m">__</p>
                 </div>
 
                 <div class="chinou">
                     <p>IQは??</p>
-                    <li id="pull_c"><img src="./chinou.png" alt="" height=200px></li>
-                    <p id="result_c">result_c</p>
+                    <li id="pull_c"><img src="./chinou.png" alt="" height=100px></li>
+                    <p id="result_c">__</p>
                 </div>
 
                 <div class="country">
                     <p>どの国に生まれる？</p>
-                    <li id="pull_r"><img src="./world.png" alt="" height=200px></li>
-                    <p id="result_r">result_r</p>
+                    <li id="pull_r"><img src="./world.png" alt="" height=100px></li>
+                    <p id="result_r">__</p>
                 </div>
 
                 <div class="lifespan">
                     <p>何歳まで生きる？</p>
-                    <li id="pull_d"><img src="./death.png" alt="" height=200px></li>
-                    <p id="result_d">result_d</p>
+                    <li id="pull_d"><img src="./death.png" alt="" height=100px></li>
+                    <p id="result_d">__</p>
                 </div>
 
                 <div class="cause">
                     <p>死因は？</p>
-                    <li id="pull_2"><img src="./death_2.png" alt="" height=200px></li>
-                    <p id="result_2">result_d</p>
+                    <li id="pull_2"><img src="./death_2.png" alt="" height=100px></li>
+                    <p id="result_2">__</p>
                 </div>
 
             </div>
@@ -74,12 +77,16 @@
             const r = Math.ceil(Math.random() * 3211);
             if (r >= 1 && r <= 42) {
                 $('#result_m').text('超富裕層（1億ドル超）');
+                $('#result_m').fadeIn(2000);
             } else if (r >= 43 && r <= 436) {
                 $('#result_m').text('富裕層（10万ドル超1億ドル以下）');
+                $('#result_m').fadeIn(2000);
             } else if (r >= 437 && r <= 1335) {
                 $('#result_m').text('中間層（1万ドル超10万ドル以下）');
+                $('#result_m').fadeIn(2000);
             } else if (r >= 1336 && r <= 3211) {
                 $('#result_m').text('貧困層（1万ドル未満）');
+                $('#result_m').fadeIn(2000);
             }
         });
 

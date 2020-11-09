@@ -1,3 +1,5 @@
+
+
 body{
     margin:auto;
     padding:0;
@@ -12,27 +14,42 @@ header{
     text-align: center;
 }
 main{
-   
-    border-bottom:1px solid #ccc;
+   line-height: 20px;
 }
+
+* {
+	float: none;
+	position: static;
+}
+
+
+
 
 .title_letter{
     font-size: 50px;
     height: 50px;
-    
+    line-height: 80px;
+    margin: auto;
+}
+.start_t{
+    font-size: x-large;
+    text-align: center;
+}
+
+.one{
+    text-align: center;
 }
 
 .title_1{
     text-align: center;
-    /* background-image: url(john_3.png); */
-    background-size: 100%;
+    background-color: rgb(245, 241, 241);
+    padding: 1%;
 }
-
-
-
-
-.start_t{
-    text-align: center;
+.title_0{
+    padding: 40px;
+}
+p{
+   overflow-wrap: normal;
 }
 
 .start_b{
@@ -51,9 +68,85 @@ li{
     text-align: center;
     list-style-type:none; 
     cursor: pointer;
+    width: 20%;
+    
 } 
 
+ .money {
+    width: auto;
+    text-align: center;
+  }
+.chinou {
+    width: auto;
+    text-align: center;
+  }
+.country {
+    width: auto;
+    text-align: center;
+  }
+.lifespan {
+    width: auto;
+    text-align: center;
+  }
+.cause {
+    width: auto;
+    text-align: center;
+  }
 
+
+@media screen and (max-width: 500px) {
+  body{
+      width: 400px;
+        }
+    .title_letter{
+       font-size: 30px;
+       margin-bottom: 10px;
+        }
+
+    .title_1{
+font-size: small;
+padding: 20px;
+  }
+
+
+  p{
+   overflow-wrap: normal;
+}
+  
+    .espr {
+    flex-direction: column;
+    text-align: center;
+    /* flex-flow: column; */
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+ 
+  .money {
+    width: auto;
+    margin: auto;
+  }
+.chinou {
+    width: auto;
+    margin: auto;
+  }
+.country {
+    width: auto;
+    margin: auto;
+  }
+.lifespan {
+    width: auto;
+    margin: auto;
+  }
+.cause {
+    width: auto;
+    margin: auto;
+  }
+.start_b{
+    justify-content: center;
+}
+
+
+}
 
 
 
