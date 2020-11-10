@@ -10,6 +10,9 @@
 </head>
 
 <body>
+
+    <audio src="poka02.mp3" id="sound"></audio>
+
     <header>
         <h1 class="title_letter">ANOTHER LIFE</h1>
         <p class="title_0">どんな境遇に生まれてくるかわからないとしたら…</p>
@@ -28,44 +31,84 @@
         <p class="start_t">Let's Start!!!</p>
         <p class="one">ボタンを押すのは1回だけ！</p>
         <div class="start_b">
-            <p id=start><img src="./start.png" alt="" height=200px></p>
+            <p id=start><img src="./start.png" alt="" height=150px></p>
         </div>
-        <ul>
+        <audio id="sound" preload="auto"></audio>
+
+        <ul class="action">
             <div class="espr">
 
                 <div class="money">
                     <p>どのくらいお金を稼げる？</p>
-                    <li id="pull_m"><img src="./rich.png" alt="" height=100px></li>
+                    <li id="pull_m"><img src="./money.png" alt="" height=130px></li>
                     <p id="result_m">__</p>
                 </div>
 
                 <div class="chinou">
                     <p>IQは??</p>
-                    <li id="pull_c"><img src="./chinou.png" alt="" height=100px></li>
+                    <li id="pull_c"><img src="./chinou.png" alt="" height=130px></li>
                     <p id="result_c">__</p>
                 </div>
 
                 <div class="country">
                     <p>どの国に生まれる？</p>
-                    <li id="pull_r"><img src="./world.png" alt="" height=100px></li>
+                    <li id="pull_r"><img src="./world.png" alt="" height=130px></li>
                     <p id="result_r">__</p>
                 </div>
 
                 <div class="lifespan">
                     <p>何歳まで生きる？</p>
-                    <li id="pull_d"><img src="./death.png" alt="" height=100px></li>
+                    <li id="pull_d"><img src="./death.png" alt="" height=130px></li>
                     <p id="result_d">__</p>
                 </div>
 
                 <div class="cause">
                     <p>死因は？</p>
-                    <li id="pull_2"><img src="./death_2.png" alt="" height=100px></li>
+                    <li id="pull_2"><img src="./death_2.png" alt="" height=130px></li>
                     <p id="result_2">__</p>
                 </div>
 
             </div>
         </ul>
 
+        <p class="border"></p>
+
+        <div class="deta">
+            <h2>データ</h2>
+
+            <div class="earn">
+                <h3>どのくらいお金を稼げる？</h3>
+                <a href="http://goldcollector.blog.fc2.com/blog-entry-635.html?sp">Credit Suisse Global Wealth Databook
+                    2018</a>
+                <p> 2018年版「世界の富の分布」</p>
+            </div>
+
+            <div class="iq">
+                <h3>IQは??</h3>
+                <a href="https://sengakuhisai.com/iq-bunpu/">IQ分布</a>
+            </div>
+
+            <div class="born">
+                <h3>どの国に生まれる？</h3>
+                <a href="https://memorva.jp/ranking/unfpa/who_whs_population.php">2020年版の世界保健統計（World Health
+                    Statistics）※上位25か国の結果のみ</a>
+            </div>
+
+            <div class="jumyo">
+                <h3>何歳まで生きる？</h3>
+                <a href="https://www.stat.go.jp/data/nenkan/back64/zuhyou/y0226000.xls">年齢別死亡数及び死亡率（平成24年）</a>
+            </div>
+
+            <div class="death">
+                <h3>死因は？</h3>
+                <a href="https://ourworldindata.org/what-does-the-world-die-from">share of deaths by
+                    cause,world,2017</a>
+            </div>
+        </div>
+
+        <footer>
+
+        </footer>
     </main>
 
 
@@ -73,6 +116,10 @@
     <script>
 
         //ここに自分の処理を追加
+        $('#start').on('click', function () {
+            document.getElementById("sound").play();
+        });
+
         $('#start').on('click', function () {
             const r = Math.ceil(Math.random() * 3211);
             if (r >= 1 && r <= 42) {
@@ -90,7 +137,6 @@
             }
         });
 
-
         $('#start').on('click', function () {
             const r = Math.ceil(Math.random() * 1000);
             if (r >= 1 && r <= 23) {
@@ -106,7 +152,6 @@
             } else if (r >= 978 && r <= 1000) {
                 $('#result_c').text('IQ１３０超');
             }
-
         });
 
         $('#start').on('click', function () {
@@ -163,6 +208,7 @@
                 $('#result_r').text('タンザニア');
             }
         });
+
         $('#start').on('click', function () {
             const r = Math.ceil(Math.random() * 1255812);
             if (r >= 1 && r <= 5551) {
