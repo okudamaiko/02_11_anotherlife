@@ -29,9 +29,9 @@
             <p>※確率は実際の統計数値に基づいて計算されています。</p>
         </div>
         <p class="start_t">Let's Start!!!</p>
-        <p class="one">ボタンを押すのは1回だけ！</p>
+        <p class="one">スタートボタンを押すのは1回だけ！</p>
         <div class="start_b">
-            <p id=start><img src="./start.png" alt="" height=150px></p>
+            <p id=start><img src="./start.png" alt="" height=150px class="button"></p>
         </div>
         <audio id="sound" preload="auto"></audio>
 
@@ -74,7 +74,7 @@
         <p class="border"></p>
 
         <div class="deta">
-            <h2>データ</h2>
+            <h2>実際のデータを見てみよう！</h2>
 
             <div class="earn">
                 <h3>どのくらいお金を稼げる？</h3>
@@ -97,6 +97,7 @@
             <div class="jumyo">
                 <h3>何歳まで生きる？</h3>
                 <a href="https://www.stat.go.jp/data/nenkan/back64/zuhyou/y0226000.xls">年齢別死亡数及び死亡率（平成24年）</a>
+                <p>このデータのみ日本のものです。エクセルデータがダウンロードされます。</p>
             </div>
 
             <div class="death">
@@ -107,13 +108,30 @@
         </div>
 
         <footer>
-
         </footer>
     </main>
 
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script>
+
+        $(function () {
+
+            var stid = "";
+
+            //マウスオーバーで点滅（setIntervalで繰り返します）
+            $(".button").mouseover(function () {
+                stid = setInterval(function () {
+                    $('.button').fadeOut(300, function () { $(this).fadeIn(300) });
+                }, 600);
+            });
+            //マウスアウトで点滅をクリア（clearInterval）
+            $(".button").mouseout(function () {
+                clearInterval(stid);
+            });
+
+        });
+
 
         //ここに自分の処理を追加
         $('#start').on('click', function () {
